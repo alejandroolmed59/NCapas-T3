@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Ingresar</title>
+</head>
+<body>
+    <form method="post" th:action="@{/nuevoAlumno}">
+        <div>
+            <label for="nombres">Nombres:</label>
+            <input id="nombres" type="text" name="nombres">
+        </div>
+        <div>
+            <label for="apellidos">Apellidos:</label>
+            <input id="apellidos" type="text" name="apellidos">
+        </div>
+        <div>
+            <label for="diaB">Fecha de nacimiento:</label>
+            <input id="diaB" type="date" name="diaB">
+        </div>
+        <div>
+            <label for="lugarB">Lugar de nacimiento:</label>
+            <input id="lugarB" type="text" name="lugarB">
+        </div>
+        <div>
+            <label for="instituto">Instituto:</label>
+            <input id="instituto" type="text" name="instituto">
+        </div>
+        <div>
+            <label for="telefonoFijo">Telefono Fijo:</label>
+            <input id="telefonoFijo" type="text" name="telefonoFijo">
+        </div>
+        <div>
+            <label for="telefonoMovil">Telefono Movil:</label>
+            <input id="telefonoMovil" type="text" name="telefonoMovil">
+        </div>
+        <input type="submit" value="Guardar Alumno">
+    </form>
+    <p>Jose Alejandro Olmedo Araniva</p>
+</body>
+</html>
